@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Encuesta</title>
+  <link rel="stylesheet" href="form-reto-1.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Formulario de Encuesta de freeCodeCamp</h1>
+      <p id="description">Gracias por contribuir a la mejora de nuestra plataforma</p>
+    </header>  
+    <form id="survey-form">      
+      <fieldset class="form-group">
+        <label for="name" id="name-label">Nombre <input class="ind-form" required id="name" name="name" type="text" placeholder="ingresa tu nombre" value="nombre"></label>
+        <label for="email" id="email-label">Correo Electrónico<input class="ind-form" required id="email" name="email" type="email" placeholder="ingresa tu correo electrónico" value="correo"></label>
+        <label for="number" id="number-label">Edad (opcional)<input class="ind-form" id="number" name="number" type="number" placeholder="ingresa tu edad" min="13" max="120" value="edad"></label>
+      </fieldset>
+
+      <fieldset class="form-group">
+
+        <p>¿Qué opcion describe mejor tu ocupación actual?</p>
+        <label for="dropdown">
+          <select id="dropdown" name="dropdown" class="ind-form">
+            <option disabled selected value>seleccionar</option>
+            <option value="0">Estudiante</option>
+            <option value="1">Trabajador a tiempo completo</option> 
+            <option value="2">Trabajador a tiempo parcial</option>
+            <option value="3">Otros</option> 
+           </select> 
+        </label>        
+      </fieldset> 
+
+      <fieldset class="form-group">
+      <p>¿Recomendarias freeCodeCamp a un amigo?</p>      
+        <label for="si"><input class="input-radio" id="si" type="radio" name="recomendacion-usuario" value="si"/> Si</label>
+        <label for="quizas"><input class="input-radio" id="quizas" type="radio" name="recomendacion-usuario" value="quizas"/> Quizás</label>
+        <label for="no"><input class="input-radio" id="no" type="radio" name="recomendacion-usuario" value="no"/> No</label>           
+      </fieldset>
+
+      <fieldset class="form-group">
+      <p>¿Qué te gustaría ver mejorado? <span class="pista">(selecciona una o más)</span></p>
+        <label for="front"><input class="check-box" type="checkbox" id="front" name="front" value="front">Proyectos de Frot-End</label>
+        <label for="back"><input class="check-box" type="checkbox" id="back" name="back" value="back">Proyectos de Back-End</label>
+        <label for="datos"><input class="check-box" type="checkbox" id="datos" name="datos" value="datos">Visualización de Datos</label>
+        <label for="retos"><input class="check-box" type="checkbox" id="retos" name="retos" value="retos">Retos</label>
+        <label for="com"><input class="check-box" type="checkbox" id="com" name="com" value="com">Comunidad de Código Abierto</label>
+        <label for="videos"><input class="check-box" type="checkbox" id="videos" name="videos" value="videos">Vídeos</label>
+        <label for="foro"><input class="check-box" type="checkbox" id="foro" name="foro" value="foro">Interactividad del Foro</label>
+      </fieldset>
+
+      <fieldset class="form-group">
+      <p>¿Tienes alguna sugerencia?</p>  
+        <label for="sugerencia">
+          <textarea class="input-textarea" id="sugerencia" name="sugerencia" rows="3" cols="30" placeholder="sugiero..." value="sugerencia"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <input  id="submit" type="submit" value="Enviar" />
+      </fieldset>
+
+    </form>  
+  </body>    
+</html>
